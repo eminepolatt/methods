@@ -1,0 +1,21 @@
+
+
+public class stringSıralaması {
+    public static void main(String[] args) {
+        // kendisine parametre olarak gelen iki  stringten büyük olanı geri döndüren method
+       Scanner k=new Scanner(System.in);
+       String x,y;
+       x=k.nextLine();
+       y=k.nextLine();
+        uzunolan(x,y);
+    }
+public static String uzunolan(String a,String b){
+    if(a.length()>b.length()){
+        System.out.println("uzun olan string="+a);
+    }
+    else if(a.length()<b.length()){
+        System.out.println("uzun olan string="+b);
+    }
+        return null;
+}
+}
