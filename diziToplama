@@ -1,0 +1,16 @@
+
+public class diziTop_18 {
+    //(18) Kendisine parametre olarak gelen tamsayı dizisinin toplamını geri  döndüren method 
+    public static void main(String[] args) {
+        int[] dizi={74,8,5,7,12,3,8,6,4,5};
+        int t=topdizi(dizi);
+        System.out.println(t);
+    }
+    public static int topdizi(int[] a){
+        int top=0;
+        for (int i = 0; i <a.length; i++) {
+            top+=a[i];
+        }
+   return top;
+    }
+}
