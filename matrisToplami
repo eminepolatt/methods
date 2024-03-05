@@ -1,0 +1,21 @@
+
+public class matrisToplami {
+    //kendisine parametre olarak gelen 3x3lük Ave B matrislerinin toplamını geri döndüren method
+    public static void main(String[] args) {
+        int[][] A={{2,3,4},{1,5,7},{8,3,9}};
+         int[][] B={{2,3,4},{1,5,7},{8,3,9}};
+        int[][] top=dizitop(A,B);
+        System.out.println(Arrays.toString(top));
+    }
+    public static int[][] dizitop(int[][] d,int[][] e){
+        int[][] diz=new int[3][3];
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                 diz[i][j]=d[i][j]+e[i][j];
+                System.out.print(diz[i][j]+" ");
+            }
+            System.out.println(" ");
+        }
+       
+    return diz;}
+}
