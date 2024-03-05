@@ -1,0 +1,14 @@
+
+public class içiçedöngüörn {
+       public static void main(String[] args) {
+         // a parametreli döngü 5 kez çalışıyor (a=1, 2, 3, 4, 5). a’nın her değeri içinse içteki döngü 3 kez çalışıyor (i=1, 2, 3). programı yazınız
+       
+        for (int a = 1; a < 6; a++) {
+            System.out.println("a="+a);
+            for (int i = 1; i < 4; i++) {
+                System.out.println("i="+i);
+            }
+            
+        }
+    }
+}
