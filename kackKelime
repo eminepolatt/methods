@@ -1,0 +1,20 @@
+
+public class kackKelime_15 {
+    //(15) kendisine parametre olarak gelen stringteki kelime sayısını geri döndüren method
+    public static void main(String[] args) {
+        Scanner k=new Scanner(System.in);
+        System.out.println("cümle giriniz");
+        String c=k.nextLine();
+        kelimesay(c);
+    }
+    public static String kelimesay(String cümle){
+        int bosluksay=0;
+        for (int i = 0; i < cümle.length(); i++) {
+            if (cümle.charAt(i)==' ') {
+                bosluksay++;
+            }
+        }
+         System.out.println((bosluksay+1)+" tane kelime vardır");
+    return cümle;
+    }
+}
