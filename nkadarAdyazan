@@ -1,7 +1,7 @@
 
 public class nkadarAdyazan {
     public static void main(String[] args) {
-        // (3)kendisine parametre olarak gelen n tam sayıyı kadar adınızı ekrana yazan programı ve metodu yazını
+        // kendisine parametre olarak gelen n tam sayıyı kadar adınızı ekrana yazan programı ve metodu yazını
         int x;
         Scanner k=new Scanner(System.in);
         x=k.nextInt();
