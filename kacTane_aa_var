@@ -1,0 +1,21 @@
+
+public class kacTane_aa_var_13 {
+    public static void main(String[] args) {
+        //(13)  kendisine parametre olarak gelen stringte kaç tane aa olduğunu geri döndüren method
+         Scanner k=new Scanner(System.in);
+        String s;
+        s=k.nextLine();
+        list(s);
+    }
+    public static String list(String str) {
+    int aasay=0;
+        for (int i = 0; i < str.length(); i++) {
+             if (str.charAt(i)=='a' && str.charAt(i+1)=='a') {
+            aasay=aasay+1;
+        }
+             
+        }System.out.println(aasay);
+   return str; }
+
+   
+}
