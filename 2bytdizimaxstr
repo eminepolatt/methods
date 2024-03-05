@@ -1,0 +1,25 @@
+
+public class ikibStrenUzun {
+    //kendisine parametre olarak gelen iki boyutlu string dizisindeki en uzun stringi geri döndüren method
+    public static void main(String[] args) {
+        
+    
+ String[][] str={{"aaa","bbbbb","ccc","dd"},{"eee","ff","gggggg","hh"}};
+    String enz=enuzun(str);
+    System.out.println(enz);
+    
+    }
+    public static String enuzun(String[][] s){
+        int boyut=s[0][0].length();
+        String enzz=s[0][0];
+        for (int i = 0; i <2; i++) {
+            for (int j = 0; j <4; j++) {
+                if (s[i][j].length()>boyut) {
+                    boyut=s[i][j].length();
+                    enzz=s[i][j];
+                }
+            }
+        }
+        return enzz;
+    }
+}
