@@ -1,0 +1,23 @@
+
+public class stringteAvarmı{
+    //Kendisine parametre olarak gelen stringte 'a' karakterinin olup olmadığını geri döndüren method
+    public static void main(String[] args) {
+        Scanner k=new Scanner(System.in);
+        System.out.println("string giriniz");
+        String str=k.nextLine();
+        boolean y=avarmı(str);
+        if (y==true ) {
+            System.out.println("String 'a' içerir");
+        }
+        else System.out.println("String 'a' içermez");
+    }
+    public static boolean avarmı(String s){
+        boolean a=false;
+        for (int i = 0; i <s.length(); i++) {
+            if (s.charAt(i)=='a') {
+                a=true;
+            }
+        }
+        
+   return a; }
+}
