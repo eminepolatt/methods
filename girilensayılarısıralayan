@@ -1,0 +1,24 @@
+
+import java.util.Scanner;
+
+
+public class girilensayılarısıralayan {
+      public static void main(String[] args) {
+        Scanner klavye=new Scanner(System.in);
+        char ara;
+        System.out.println("üç karakter giriniz");
+        char a=klavye.next().charAt(0);
+        char b=klavye.next().charAt(0);
+        char c=klavye.next().charAt(0);
+        if(a>b){
+            ara=a;    a=b;     b=ara;
+            }
+        if(a>c){
+            ara=a;    a=c;    c=ara;
+           }
+        if(b>c){
+            ara=b;    b=c;     c=ara;
+           }
+        System.out.println("sıralanmış karakterler:"+a+""+b+""+c);
+    }
+}
