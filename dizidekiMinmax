@@ -1,0 +1,34 @@
+
+public class dizidekiMinmax_24 {
+    //(24)  kendisine parametre olarak gelen tamsayı dizisindeki en büyük ve en küçük sayıyı geri döndüren
+    public static void main(String[] args) {
+        int[] not={41,78,4,7,9};
+        int x=enbenk(not);
+        System.out.println(x);
+    }
+    public static int enbenk(int[] dizi){
+        int enb,enk; 
+        if (dizi[0]>dizi[1]) {
+            enb=dizi[0];
+            enk=dizi[1];
+        }
+        else{
+            enb=dizi[1];
+            enk=dizi[0];
+        }
+        for (int i = 2; i <dizi.length-1; i++) {
+            if (dizi[i]>enb) {
+                enb=dizi[i];
+            }
+            if (dizi[i]<enk) {
+                enk=dizi[i];
+            }
+        }
+        System.out.println("en büyük="+enb);
+        System.out.println("en küçük="+enk);
+        return 0;
+       
+   
+   
+    }
+}
