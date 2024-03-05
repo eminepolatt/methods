@@ -1,0 +1,28 @@
+public class maxIkinciSayi {
+    // kendisine parametre olarak gelen tamsayı dizisindeki en büyük ikinci sayıyı geri döndüren method
+    public static void main(String[] args) {
+    
+      
+      int[] dizi={1,2,3,4,5,6,7,8,9};
+      int x=enbiki(dizi);
+      System.out.println("enbüyük ikinci sayı="+x);
+    }
+    public static int enbiki(int[] a){
+        int enb =a[0],iki=0;
+        if(a[1]>a[0]){
+            enb=a[1];
+            iki=a[0];
+        }
+       
+        for (int i = 2; i <a.length; i++) {
+          
+                if (a[i]>enb ) {
+                iki=enb;
+                enb=a[i];
+            }
+
+        }
+        return iki;
+        
+    }
+}
