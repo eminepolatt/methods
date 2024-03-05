@@ -1,0 +1,23 @@
+public class diziDondurme {
+    //kendisine parametre olarak gelen 10 elemanlı tam sayı dizisini bir sağa döndüren ve diziyi ana methoda geri döndüren method
+    public static void main(String[] args) {
+        int[] dizi={0,1,2,3,4,5,6,7,8,9};
+         int[] d=dondur(dizi);
+         for (int i = 0; i < dizi.length; i++) {
+            System.out.print(d[i]+" ");
+        }
+        
+        
+    }
+    public static int[] dondur(int[] a){
+         int[] x=new int[10];
+         x[0]=a[9];
+         for (int i = 1; i < a.length; i++) {
+            
+             x[i]=a[i-1];
+             
+        }
+         
+         return x;
+    }
+}
