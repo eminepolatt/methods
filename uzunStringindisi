@@ -1,0 +1,26 @@
+
+public class uzunStringindisi {
+    //kendisine parametre olarak gelen string dizisindeki en uzun stringin olduğu indisi geri döndüren method 
+    public static void main(String[] args) {
+        String[] str={"ela","lale","ali","veli","leyla"};
+        String enb=enuzun(str);
+        System.out.println(enb);
+    }
+    public static String enuzun(String[] s){
+       int enz=s[0].length();
+       String enzz=s[0];
+       int indis=0;
+        for (int i =1; i < s.length; i++) {
+            if (s[i].length()>enz) {
+                enz=s[i].length();
+                enzz=s[i];
+                indis =i;
+            }
+        }
+        return "en uzun string ="+enzz+"  indisi= "+indis;
+  
+    }
+    
+    
+}
+
