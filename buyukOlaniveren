@@ -1,0 +1,26 @@
+
+public class buyukOlanıveren {
+    public static void main(String[] args) {
+        //kendisine parametre olarak gelen iki tam sayıdan büyük olanı geri döndüren method
+       Scanner k=new Scanner(System.in);
+        int x,y,z;
+        x=k.nextInt();
+        y=k.nextInt();
+        z=enb(x,y);
+        System.out.println(z);
+    }
+    public static int enb(int a,int b){
+      
+      
+        if (a>b) {
+            System.out.println("büyük olan="+a); 
+        }
+        else if (b>a) {
+            System.out.println("büyük olan="+b);
+        }
+       
+        return 0;
+ 
+     
+              }
+}
