@@ -1,0 +1,28 @@
+
+import java.util.Scanner;
+public class girilensayınınbasamakları {
+     
+    public static void main(String[] args) {
+     Scanner read = new Scanner(System.in);
+        System.out.println("4 basamaklı bir sayi giriniz");
+        int sayi1=read.nextInt();
+        int binler,yuzler,onlar,birler;
+        binler=sayi1/1000;
+        sayi1=sayi1%1000;
+        yuzler=sayi1/100;
+        sayi1=sayi1%100;
+        onlar=sayi1/10;
+        sayi1=sayi1%10;
+        birler=sayi1;
+        System.out.println("Birler basamağı="+birler);
+        System.out.println("Onlar basamağı="+onlar);
+        System.out.println("Yüzler basamağı="+yuzler);
+        System.out.println("Binler basamağı="+binler);
+        
+               
+       
+               
+     
+         
+    } 
+}
