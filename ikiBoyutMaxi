@@ -1,0 +1,56 @@
+
+public class ikiBoyutMaxı_26_27_28 {
+    //(26,27,28) kendisine parametre olarak gelen iki boyutlu tam sayı dizisindeki en büyük sayı geri döndüren method
+    public static void main(String[] args) {
+        int[][] dizi={{4,1,3,},{5,6,8},{5,7,9}};
+        int x=enbuyuk(dizi);
+        System.out.println(x);
+        int ind=indisi(dizi);
+        System.out.println(ind);
+        int t=satirtop(dizi);
+        System.out.println(t);
+    }//26.soru
+    public static int enbuyuk(int[][] a){
+        int enb=a[0][0];
+        for (int i = 0; i <a.length; i++) {
+            for (int j = 0; j <a.length; j++) {
+                if (a[i][j]>enb) {
+                    enb=a[i][j];
+                    
+                }
+            }
+        }
+   return enb;
+    }//27.soru=en büyük elemanın indisini return eden
+    public static int indisi(int[][] b){
+        int satir=0,sutun = 0;
+         int enb=b[0][0];
+        for (int i = 0; i <b.length; i++) {
+            for (int j = 0; j <b.length; j++) {
+                if (b[i][j]>enb) {
+                    enb=b[i][j];
+                    satir=i;
+                    sutun=j;
+                }
+            }
+        }System.out.println("en büyük sayının indisi=("+satir+","+sutun+")");
+        return 0;
+
+    }
+    //28.soru = her bir satırın toplamını return eden
+    public static int satirtop(int[][] c){
+        int top=0;
+        for (int i = 0; i < c.length; i++) {
+            top=0;
+            for (int j = 0; j <c.length; j++) {
+                top+=c[i][j];
+                
+            }System.out.println(top);
+        }
+   return top;
+    }
+}
+                
+           
+    
+            
