@@ -1,0 +1,26 @@
+
+public class enKucukindisi {
+   //  kendisine parametre olarak gelen tamsayı dizisindeki en küçük elemanın indisini geri döndüren method
+    public static void main(String[] args) {
+       Scanner k=new Scanner(System.in);
+       int[] dizi=new int[10];
+        for (int i = 0; i < 10; i++) {
+            dizi[i]=k.nextInt();
+        }
+        int x=enkucuk(dizi);
+        System.out.println("indisi="+x);
+    }
+    public static int enkucuk(int[] a){
+        int enk=a[0];
+        int indis=0;
+        for (int i = 1; i <a.length; i++) {
+            if (a[i]<a[0]) {
+                enk=a[i];
+                indis=i;
+            }
+            
+        }
+        
+        return indis;
+    }
+}
