@@ -1,0 +1,13 @@
+
+public class stringBirlestirme {
+    public static void main(String[] args) {
+            String s1="ali";
+            String s2="veli";
+            birlestir(s1,s2);
+    }
+    public static void birlestir(String a,String b){
+       String yeni=a+b;
+        System.out.println(yeni);
+    }
+    
+}
