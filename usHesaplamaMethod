@@ -1,0 +1,24 @@
+public class usHesaplamaMethodu {
+     public static void main(String[] args) {
+     //kendisiene parametre olarak gelen iki pozitif tam sayı için x üzeri y yi hesaplayan ana program ve methodu yazınız
+     Scanner k= new Scanner(System.in);
+     int x,y,z;
+        System.out.println("üs değerini giriniz");
+     y=k.nextInt();
+        System.out.println("taban değerini giriniz");
+     x=k.nextInt();
+     z=us(x,y);
+        System.out.println(z);
+    }
+    public static int us(int a,int b){
+        int f=1;
+        for (int i = 0; i < b; i++) {
+            f=f*a;
+        }
+        
+        return f;
+        
+        
+    }
+   
+}
