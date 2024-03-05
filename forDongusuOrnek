@@ -1,0 +1,21 @@
+
+import java.util.Scanner;
+
+
+public class forDongusuOrnek {
+     public static void main(String[] args) {
+        // klavyeden girilen sayılar toplanacaktır.0 girince duran ve sonucu ekrana yazdıran program
+   int t,toplam=0;
+   Scanner k=new Scanner(System.in);
+       
+for(;;){
+    System.out.println("bir sayı giriniz");
+      t=k.nextInt();   
+      if(t==0){
+          System.out.println(toplam);System.exit(1);
+      }
+      toplam+=t;
+   }
+   
+    }
+}
