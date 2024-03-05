@@ -1,0 +1,22 @@
+
+public class kacBasamaklımethodu_4 {
+    public static void main(String[] args) {
+        //(4) kendisine parametre gelen pozitif tam sayının kaç basamaklı olduğunu  geri döndüren  method
+        Scanner k=new Scanner(System.in);
+        int x=k.nextInt();
+       int  y=basamak(x);
+        System.out.println(y);
+    }
+    public static int basamak(int a){
+        int bassayı=0;
+        while(a>0){
+           bassayı++;
+           a=a/10;
+           
+        }
+        System.out.println("basamak sayısı="+bassayı);
+                
+   return a; 
+    }
+ 
+}
