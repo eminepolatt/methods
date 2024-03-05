@@ -1,0 +1,23 @@
+
+public class ikiBytMaxstr {
+    //kendisine parametre olarak gelen 2 boyutlu string dizisindeki en uzun karaktere sahip stringi ve yerini(satır,sütun) geri döndüren metod
+    public static void main(String[] args) {
+        String a[][]={{"aaa","bbbb","cccc"},{"dd","eeeeee","fffff"}};
+        String s=enuzun(a);
+        System.out.println(s);
+    }
+    public static String enuzun(String str[][]){
+        String enz=str[0][0];
+        int sat=0,sut=0;
+        for (int i = 0; i <str.length; i++) {
+            for (int j = 1; j <str[i].length; j++) {
+                if (str[i][j].length()>enz.length()) {
+                    enz=str[i][j];
+                    sat=i;
+                    sut=j;
+                }
+            }
+        }
+    return enz+" satır="+sat+" sütun="+sut;
+    }
+}
