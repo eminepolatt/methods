@@ -1,0 +1,21 @@
+
+public class harfleriniBuyuten {
+//kendisine parametre olarak gelen stringteki küçük harfleri büyük harf yapan sonucu geri döndüren method
+    public static void main(String[] args) {
+   Scanner k=new Scanner(System.in);
+        System.out.println("string giriniz");
+        String str=k.nextLine();
+        kckbyk(str);
+        System.out.println(kckbyk(str));
+    }
+    public static String kckbyk(String s){
+        String temp="";
+            for (int i = 0; i <s.length(); i++) {
+              char ch=s.charAt(i);
+              ch=(char)(ch-32);
+              temp+=ch;
+          }  
+           
+   return temp; 
+} 
+}
