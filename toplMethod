@@ -1,0 +1,23 @@
+public class toplamaMethodu{
+    public static void main(String[] args) {
+          //kendisine parametre olarak gelen iki tam sayıyı toplayıp geri döndüren ana programı ve metodu yazınız
+      int x;
+      x=toplam(3,5);
+        System.out.println(x);
+        x=toplam(20,30);
+        System.out.println(x);
+    }
+public static int toplam(int a,int b){
+    
+    
+    
+   int y=a+b;
+    
+   
+        return y;
+    
+    
+    
+}
+ 
+    }
