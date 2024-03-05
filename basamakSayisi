@@ -1,0 +1,26 @@
+
+import java.util.Scanner;
+
+
+public class basamakSayısıMethodu {
+    public static void main(String[] args) {
+        //kendisine parametre olarak gelen pozitif tam sayının kaç basamaklı olduğunu ekrana yazan anaprogramı ve methodu
+        Scanner k=new Scanner(System.in);
+        int x,y;
+        x=k.nextInt();
+        y=basamak(x);
+        System.out.println(y);
+    }
+    public static int basamak(int a){
+       int bassayı=0;
+        while(a>0){
+        bassayı++;
+        a=a/10;
+        }
+        System.out.println("basamak sayısı="+bassayı);
+        return a;
+    }
+}
+        
+    
+
