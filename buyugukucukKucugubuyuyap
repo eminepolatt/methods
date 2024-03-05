@@ -1,0 +1,27 @@
+public class buyuguKucukkucuguBuyukyapan {
+    public static void main(String[] args) {
+        //kendisine parametre olarak gelen stringteki küçük harfleri büyük harf,büyükleri de küçük harf yapıp geri döndüren method
+   Scanner k=new Scanner(System.in);
+        System.out.println("kelime giriniz");
+        String str=k.nextLine();
+        kckbyk(str);
+        System.out.println(kckbyk(str));
+    }
+    public static String kckbyk(String a){
+        String temp="";
+        for (int i = 0; i < a.length(); i++) {
+            if (a.charAt(i)>='A' && a.charAt(i)<='Z') {
+                char ch=a.charAt(i);
+                ch=(char)(ch+32);
+                temp+=ch;
+            }
+            else if (a.charAt(i)>='a' && a.charAt(i)<='z') {
+                char ch=a.charAt(i);
+                ch=(char)(ch+32);
+                temp+=ch;
+            }
+            
+        }
+        return temp;
+    }
+}
