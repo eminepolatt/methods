@@ -1,0 +1,22 @@
+
+public class toplam2methodu_7 {
+    public static void main(String[] args) {
+        //(7) kendisine parametre olarak gelen pozitif tam sayıya kadarki olan tam sayıları toplayıp geri döndüren method
+        Scanner k=new Scanner(System.in);
+        int x,y;
+        x=k.nextInt();
+        y=toplama(x);
+        System.out.println(y);
+    }
+    public static int toplama(int y){
+      int  top=0;
+        for (int i = 0; i <=y; i++) {
+            top=top+i;
+            
+            
+        }
+        System.out.println("toplam="+top);
+        return y;
+    }
+            
+}
