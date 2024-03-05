@@ -1,0 +1,32 @@
+
+import java.util.Scanner;
+public class girilenSayıkadaradsoyad {
+      
+    public static void main(String[] args) {
+        // klavyeden girilen sayı adedi kadar öğrencilere ait ad soyad numara bilgisini ekrana yazan
+        Scanner   k=new Scanner(System.in);
+        int t;
+        String ad,soyad,no;
+        System.out.println("Öğrenci sayısını giriniz");
+        t=k.nextInt();
+        if(t<=0){
+            System.out.println("yanlış değer"); System.exit(1);
+        }
+        for(int i=0;i<t;i++){
+            System.out.println("Adınız?");
+          ad=k.next();
+            
+            System.out.println("Soyadınız?");
+           soyad=k.next();
+           
+            System.out.println("Numaranız?");
+            no=k.next();
+            System.out.println("Ad="+ad);
+            System.out.println("Soyad="+soyad);
+            System.out.println("No="+no);
+             
+        }
+        
+    }
+    
+}
