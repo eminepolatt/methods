@@ -1,0 +1,16 @@
+
+public class faktoriyelMethodu {
+    public static void main(String[] args) {
+        // kendisine parametre olarak gelen pozitif tam sayının faktöriyelini geri döndüren method
+        Scanner k=new Scanner(System.in);
+        System.out.println("sayı giriniz");
+        int x=k.nextInt();
+        System.out.println(faktoriyel(x));
+    }
+    public static int faktoriyel(int a){
+        int f=1;
+        for (int i = a; i >0; i--) {
+            f*=i;
+        }
+   return f; }
+}
