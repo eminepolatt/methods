@@ -1,0 +1,22 @@
+
+public class asalmi{
+    // kendisine parametre olarak gelen tamsayının asal olup olmadığını geri döndüren metod
+    public static void main(String[] args) {
+      
+        boolean x=asalmı(7);
+        if (x==false) {
+            System.out.println("asal değil");
+        }
+        else    System.out.println("asal");
+    }
+    public static boolean asalmı(int a){
+        boolean b=false;
+        for (int i = 2; i <Math.sqrt(a); i++) {
+            if (a%i!=0) {
+                b=true;
+                break;
+            }
+        }
+    return b;
+    }
+}
